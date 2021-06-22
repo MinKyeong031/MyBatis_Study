@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>hi Spring MVC~</h1>
-<img src="img/1.svg"/><hr>
-<a href="/login">LogIn</a><br/>
+<h1>Result</h1>
+<h1>ภ๚ภๅตส</h1>
 </body>
 </html>
