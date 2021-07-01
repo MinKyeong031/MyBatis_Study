@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="login">
+ <insert id="insert" parameterType="kr.hs.study.model.dto.LoginDTO">
+	insert into login (id,pw) values(#{id},#{pw}) 
+  </insert>
+  
+  <delete id="delete">
+  	delete from login where id=#{id}
+  </delete>
+  
+  <update id="update">
+  	update login set pw=#{"7777"} where id=#{id}
+  </update>
+ 	
+</mapper>       
