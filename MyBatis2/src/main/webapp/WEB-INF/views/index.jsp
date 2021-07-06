@@ -9,8 +9,8 @@
 <body>
 <h1>hi Spring MVC~</h1>
 <img src="img/1.svg"/><hr>
-<a href="/login">LogIn</a><br/>
-<a href="/delete?id=kim">Delete</a><br/>
-<a href="/update?id=kim">Update</a><br/>
+	<a href="/login">LOGIN</a><br/>
+	<a href="/delete?user_id=kim">DELETE</a>
+	<a href="/update?user_id=kim">UPDATE</a>
 </body>
 </html>

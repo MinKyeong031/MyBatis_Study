@@ -1,20 +1,25 @@
 package kr.hs.study.model.dto;
 
 public class LoginDTO {
-	private String id;
-	private String pw;
-	public String getId() {
-		return id;
+	private String user_id;
+	
+	private String user_pass;
+
+	public String getUser_id() {
+		return user_id;
 	}
-	public void setId(String id) {
-		this.id = id;
+
+	public void setUser_id(String user_id) {
+		this.user_id = user_id;
 	}
-	public String getPw() {
-		return pw;
+
+	public String getUser_pass() {
+		return user_pass;
 	}
-	public void setPw(String pw) {
-		this.pw = pw;
+
+	public void setUser_pass(String user_pass) {
+		this.user_pass = user_pass;
 	}
 	
-
+	
 }

@@ -4,4 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
  <mapper namespace="test_db">
+ <insert id="insert_data" parameterType="kr.hs.study.model.dto.LoginDTO">
+ 	insert into login(user_id, user_pass) values(#{user_id},#{user_pass})
+ </insert>
+  <delete id="delete_data">
+ 	delete from login where user_id=#{user_id}
+ </delete>
+ <update id="update_data">
+ 	update login set user_pass='2222' where user_id=#{user_id}
+ </update>
 </mapper>       

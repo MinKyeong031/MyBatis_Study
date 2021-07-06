@@ -5,15 +5,7 @@
  
  <mapper namespace="login">
  <insert id="insert" parameterType="kr.hs.study.model.dto.LoginDTO">
-	insert into login (id,pw) values(#{id},#{pw}) 
+	insert into login1 (id,pw) values(#{id},#{pw}) 
   </insert>
-  
-  <delete id="delete">
-  	delete from login where id=#{id}
-  </delete>
-  
-  <update id="update">
-  	update login set pw=#{"7777"} where id=#{id}
-  </update>
  	
 </mapper>       

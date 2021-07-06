@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="book">
+ 	<insert id="add" parameterType="kr.hs.study.model.dto.BookDTO">
+ 		insert into book(title, author, price) values(#{title},#{author},#{price})
+ 	</insert>
+ 	<delete id="delete">
+ 		delete from book where title=#{title}
+ 	</delete>
+ 	<select id="list" resultType="kr.hs.study.model.dto.BookDTO">
+ 		select * from book order by title desc
+ 	</select>
+ 	<update id="update" parameterType="kr.hs.study.model.dto.BookDTO">
+ 		update book set title=#{title},author=#{author},price=#{price} where title=#{title}
+ 	
+ 	</update>
+ 	<select id="selectOne" resultType="kr.hs.study.model.dto.BookDTO">
+ 	select * from book where title=#{title}
+ 	</select>
+</mapper>       
